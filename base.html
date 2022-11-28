@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title%} {% end block %}</title>
+    <link rel="stylesheet" type= "text/css" herf ="{{url_for('static, filename='style.css')}}">
+</head>
+<body>
+  {% block content %}
+  <a href = "{{url_for('/'}}"> index page</a>
+   <a href = "{{url_for('/one'}}"> page 1</a>
+    <a href = "{{url_for('/two'}}"> page 2</a>
+  {% end block %}
+</body>
+</html>
